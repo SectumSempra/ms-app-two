@@ -12,7 +12,7 @@ public interface AppTwoController {
 
     @RequestMapping(value = "/job-list-all", method = RequestMethod.GET)
     public ResponseEntity< ? > jobListAll();
-
+    
     @RequestMapping(value = "/region-feign-list-all", method = RequestMethod.GET)
     public ResponseEntity< ? > regionFeginListAll();
 

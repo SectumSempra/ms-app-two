@@ -5,8 +5,8 @@ import org.springframework.cloud.openfeign.FeignClient;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.GetMapping;
 
-@FeignClient("app-one-services")
-@RibbonClient("app-one-services")
+@FeignClient(name = "app-one-services", path = "app-one-api")
+@RibbonClient(name = "app-one-services")
 public interface AppOneFeignApi {
 
     @GetMapping(value = "/api/region-list-all")
