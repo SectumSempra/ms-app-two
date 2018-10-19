@@ -11,6 +11,9 @@ import org.springframework.web.bind.annotation.RestController;
 public interface AppTwoController {
 
     @RequestMapping(value = "/job-list-all", method = RequestMethod.GET)
-    public ResponseEntity< ? > listAll();
+    public ResponseEntity< ? > jobListAll();
+
+    @RequestMapping(value = "/region-feign-list-all", method = RequestMethod.GET)
+    public ResponseEntity< ? > regionFeginListAll();
 
 }
