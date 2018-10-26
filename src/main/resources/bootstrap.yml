@@ -9,4 +9,8 @@ spring:
 ############     
 server:
   servlet:
-    context-path: /app-two-api/    
+    context-path: /app-two-api/   
+#################################
+eureka:
+  instance:
+    instance-id : ${spring.application.name}:${ip}:${spring.profiles.active}:${server.port}      
