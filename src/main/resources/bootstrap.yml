@@ -1,0 +1,12 @@
+spring:
+  application:
+    name: app-two-services   
+  profiles:
+     active: local
+  cloud:
+    config:
+      uri: http://10.6.221.129:10010      
+############     
+server:
+  servlet:
+    context-path: /app-two-api/    
