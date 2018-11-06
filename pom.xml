@@ -111,6 +111,7 @@
 				</includes>
 			</resource>
 			<resource>
+				<targetPath>scripts</targetPath>
 				<filtering>true</filtering>
 				<directory> src/main/resources/scripts</directory>
 				<includes>
