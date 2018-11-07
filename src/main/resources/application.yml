@@ -6,6 +6,8 @@ server:
 spring:
   application:
     name: app-two-services
+  profiles:
+    active: dev  
   datasource:
     url: jdbc:h2:mem:hr;DB_CLOSE_ON_EXIT=FALSE;INIT=RUNSCRIPT FROM 'classpath:scripts/load.sql';
     username: sa
@@ -37,3 +39,7 @@ eureka:
 app-one-services:
   ribbon:
     listOfServers: localhost:10000, localhost:10005
+#########################################################         
+info:
+  application:
+    name : ${spring.application.name}         
