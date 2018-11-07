@@ -6,7 +6,7 @@ spring:
   application:
     name: app-two-services
   datasource:
-    url: jdbc:h2:mem:hr?useUnicode=yes&characterEncoding=UTF-8;DB_CLOSE_ON_EXIT=FALSE;INIT=runscript from '~/h2sqlfiles/hr_ddl.sql';
+    url: jdbc:h2:mem:hr;DB_CLOSE_ON_EXIT=FALSE;INIT=RUNSCRIPT FROM 'classpath:scripts/load.sql';
     username: sa
     password: null
     driver-class-name: org.h2.Driver
